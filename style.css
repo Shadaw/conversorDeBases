@@ -1,0 +1,55 @@
+/*@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+*/
+*{
+    margin: 0;
+    padding: 0;
+    font-size:100%;
+    border: none;
+    outline: none;
+    font-weight: 300;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+ 
+
+
+.form {
+    height: 97vh;
+    background: rgb(240, 240, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.form div label {
+    
+    font-weight: 700;
+    color:black;
+    font-size: 40px;
+}
+
+.form div input {
+    padding-left: 10px;
+    margin-bottom: 20px;
+    width: 365px;
+    float: center;
+    height: 30px;
+    border-radius: 25px;
+}
+
+#btn {
+    height: 30px;
+    color:white;
+    background: lightblue;
+    cursor: pointer;
+}
+
+
+footer h6 {
+    font-size: 18px;
+    text-align: center;
+    background: rgb(240, 240, 240);
+    color:rgb(240, 240, 240);
+}
