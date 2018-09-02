@@ -53,3 +53,14 @@ footer h6 {
     background: rgb(240, 240, 240);
     color:rgb(240, 240, 240);
 }
+
+
+@media only screen and (max-width: 568px) {
+    .form div label {
+        font-size: 35px;
+    }
+
+    .form div input {
+        width: 300px;
+    }
+} 
