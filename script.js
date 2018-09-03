@@ -5,7 +5,7 @@ btn.onclick = () => {
     let num = parseInt(document.getElementById('decimal').value)
     let i = 0;
     let lista = [];
-    let binaritoArray = [];
+    let binarioArray = [];
     let cont = 0;
 
     while (true) {
@@ -17,18 +17,18 @@ btn.onclick = () => {
         if (num <= 0) {
             for (let i = lista.length - 1; 0 <= i; i--) {
                 
-                binaritoArray[cont] = lista[i]
+                binarioArray[cont] = lista[i]
                 cont ++
             }
             
             break
         }
     }
-    let binarioSting = binaritoArray.toLocaleString('');
+    let binarioString = binarioArray.toLocaleString('');
 
-    while (binarioSting.search(',') > '0') {
-        binarioSting = binarioSting.replace(',', '');
+    while (binarioString.search(',') > '0') {
+        binarioString = binarioString.replace(',', '');
     }
     
-    let resp = document.getElementById('binario').value = binarioSting;
+    let resp = document.getElementById('binario').value = binarioString;
 }
