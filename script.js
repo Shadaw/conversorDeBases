@@ -1,6 +1,3 @@
-// Fazer um algoritmo para converter decimal para binario, e ao contrario
-// para compilar gcc index.c -o <nome do arquivo a ser compilado>
-
 let btn = document.getElementById('btn');
 
 btn.onclick = () => {
@@ -8,7 +5,7 @@ btn.onclick = () => {
     let num = parseInt(document.getElementById('decimal').value)
     let i = 0;
     let lista = [];
-    let teste = [];
+    let binaritoArray = [];
     let cont = 0;
 
     while (true) {
@@ -20,18 +17,18 @@ btn.onclick = () => {
         if (num <= 0) {
             for (let i = lista.length - 1; 0 <= i; i--) {
                 
-                teste[cont] = lista[i]
+                binaritoArray[cont] = lista[i]
                 cont ++
             }
             
             break
         }
     }
-    let seila = teste.toLocaleString('');
+    let binarioSting = binaritoArray.toLocaleString('');
 
-    while (seila.search(',') > '0') {
-        seila = seila.replace(',', '');
+    while (binarioSting.search(',') > '0') {
+        binarioSting = binarioSting.replace(',', '');
     }
     
-    let resp = document.getElementById('binario').value = seila;
+    let resp = document.getElementById('binario').value = binarioSting;
 }
