@@ -1,5 +1,5 @@
-/*@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
-*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
 *{
     margin: 0;
     padding: 0;
@@ -10,11 +10,21 @@
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
 }
- 
-
+.content {
+    background: rgb(240, 240, 240);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 100vh;
+}
 
 .form {
-    height: 97vh;
+    margin-left: 200px;
+}
+.form1 {
+    margin-right: 200px;
+}
+.form, .form1 {
     background: rgb(240, 240, 240);
     display: flex;
     justify-content: center;
@@ -22,45 +32,62 @@
     flex-direction: column;
 }
 
-
-.form div label {
-    
+.form div label, .form1 div label {
     font-weight: 700;
     color:black;
-    font-size: 40px;
+    font-size: 25px;
+    margin-bottom: 50px;
+    margin-left: 5px;
 }
 
-.form div input {
+
+.form div input, .form1 div input {
     padding-left: 10px;
     margin-bottom: 20px;
-    width: 365px;
+    width: 500px;
     float: center;
     height: 30px;
     border-radius: 25px;
 }
 
-#btn {
+
+#btn, #btn1 {
     height: 30px;
     color:white;
     background: lightblue;
     cursor: pointer;
 }
 
-
-footer h6 {
-    font-size: 18px;
-    text-align: center;
-    background: rgb(240, 240, 240);
-    color:rgb(240, 240, 240);
+@media only screen and (max-width: 1410px){
+    .content {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .form {
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-bottom: 50px;
+    }
+    .form1{
+        margin-right: 0;
+    }
 }
 
-
 @media only screen and (max-width: 568px) {
-    .form div label {
-        font-size: 35px;
+    .form {
+        margin-left: 0px;
+        margin-top: 50px;
+    }
+    .form, .form1{
+        margin-right: 0px;
     }
 
-    .form div input {
+    .form div label, .form1 div label {
+        margin-left: 2px;
+        font-size: 23px;
+    }
+
+    .form div input, .form1 div input {
         width: 300px;
     }
 } 
