@@ -30,7 +30,7 @@ btn.onclick = () => {
                     break
                 }
             }
-            let binarioString = binarioArray.toLocaleString('');
+            let binarioString = binarioArray.toString('');
         
             while (binarioString.search(',') > '0') {
                 binarioString = binarioString.replace(',', '');
@@ -70,7 +70,7 @@ btn1.onclick = () => {
                 break
             }
         }
-        let hexadecimalString = hexadecimalArray.toLocaleString('');
+        let hexadecimalString = hexadecimalArray.toString('');
 
         while (hexadecimalString.search(',') > '0') {
             hexadecimalString = hexadecimalString.replace(',', '');
