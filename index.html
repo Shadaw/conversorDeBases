@@ -5,38 +5,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <title>Conversor de Numeros</title>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Conversor de Numeros</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="content">
     <form class="form">
-        <div>
-            <label>NUMERO DECIMAL</label><br>
+        <div class="decimal">
+            <label>NUMERO DECIMAL</label>
             <input id="decimal" type="number" name="decimal">
         </div>
-        <div>
-            <label>NUMERO BINARIO</label><br>
+        <div class="binario">
+            <label>NUMERO BINARIO</label>
             <input id="binario" readonly>
         </div>
-        <div>
+        <div class="btn">
             <input id="btn" type="button" value="Calcular">
         </div>
     </form>
     <form class="form1">
-        <div>
-            <label>NUMERO DECIMAL</label><br>
+        <div class="decimal">
+            <label>NUMERO DECIMAL</label>
             <input id="decimal1" type="number">
         </div>
-        <div>
-            <label >NUMERO HEXADECIMAL</label><br>
+        <div class="hexadecimal">
+            <label >NUMERO HEXADECIMAL</label>
             <input id="hexadecimal" readonly>
         </div>
-        <div>
+        <div class="btn">
             <input id="btn1" type="button" value="Calcular">
         </div>
     </form>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

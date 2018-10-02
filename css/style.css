@@ -1,0 +1,60 @@
+.content {
+    height: 100%;
+    display: flex;
+    background: -webkit-linear-gradient(right, var(--color-gradient-one) 0%, var(--color-gradient-two) 100%);
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+
+.form, .form1 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 200px;
+    border-radius: 20px;
+    background: var(--color-zero);
+    margin: 0px 20px;
+    padding: 0px 20px;
+    box-shadow: 1px 1px 20px var(--color-shadow);
+}
+
+.decimal,
+.binario,
+.hexadecimal {
+    color: var(--color-zero);
+    margin: 2px;
+    padding: 5px;
+    background: var(--color-negative);
+    border-radius: 5px;
+    width : -webkit-fill-available;
+}
+
+.decimal input,
+.binario input,
+.hexadecimal input {
+    width : -webkit-fill-available;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.btn input {
+    cursor: pointer;
+    margin: 2px;
+    background: var(--color-primary);
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 15px;
+    color: var(--color-zero);
+}
+
+.btn input:hover {
+    background: var(--color-primary-dark);
+}

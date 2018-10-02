@@ -1,0 +1,9 @@
+:root {
+    --color-negative: rgb(39, 39, 39);
+    --color-zero: #fff;
+    --color-primary: #ff6347;
+    --color-primary-dark: #ca4e38;
+    --color-gradient-one:rgba(152, 144, 226, 0.2);
+    --color-gradient-two:rgba(226, 126, 79, 0.2) ;
+    --color-shadow: rgba(128, 128, 128, 0.39);
+}
