@@ -1,5 +1,4 @@
 .content {
-    height: 100%;
     display: flex;
     background: -webkit-linear-gradient(right, var(--color-gradient-one) 0%, var(--color-gradient-two) 100%);
     justify-content: center;
